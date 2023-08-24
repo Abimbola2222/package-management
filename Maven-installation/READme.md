@@ -1,22 +1,23 @@
 #  **<span style="color:green">Landmark Technologies, Ontario, Canada.</span>**
 ### **<span style="color:green">Contacts: +1437 215 2483<br> WebSite : <http://mylandmarktech.com/></span>**
 ### **Email: mylandmarktech@gmail.com**
+### **Youtube: https://www.youtube.com/channel/UCa98yMG9Sxtcyk61li3jPwQ**
 
 
 
 ## Apache Maven Installation And Setup In AWS EC2 Redhat Instnace.
 ##### Prerequisite
-+ AWS Acccount.
++ AWS Account.
 + Create Redhat EC2 T2.medium Instnace with 4GB of RAM.
-+ Create Security Group and open Required ports.
-   + 22 ..etc
++ Create a Security Group and open Required ports.
+   + 22 80 443..etc
 + Attach Security Group to EC2 Instance.
 + Install java openJDK 1.8+
 
 ### Install Java JDK 1.8+  and other softares (GIT, wget and tree)
 
 ``` sh
-# install Java JDK 1.8+ as a pre-requisit for maven to run.
+# install Java JDK 1.8+ as a pre-requisit for maven to run.(latest and stable version)
 
 sudo hostname maven
 sudo su - ec2-user
@@ -29,7 +30,7 @@ git --version
 
 ## 2. Download, extract and Install Maven
 ``` sh
-#Step1) Download the Maven Software
+#Step1) Download the Maven Software(latest and stable version)
 sudo wget https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.zip
 sudo unzip apache-maven-3.8.6-bin.zip
 sudo rm -rf apache-maven-3.8.6-bin.zip
